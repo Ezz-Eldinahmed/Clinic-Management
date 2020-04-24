@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="603.3333740234375" prefHeight="452.5000305175781" prefWidth="603.3333740234375" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.UsersCreationController">
+  <children>
+    <ImageView fitHeight="452.5000305175781" fitWidth="603.3333740234375" layoutX="1.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button id="button" blendMode="COLOR_BURN" contentDisplay="TOP" layoutX="111.0" layoutY="358.0" onAction="#loginAction" opacity="1.0" prefHeight="58.0" prefWidth="162.0" text="Create" textFill="#330018" textOverrun="CLIP" underline="false">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#f5ffcc" />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="Arial Bold" size="30.0" />
+      </font>
+    </Button>
+    <Label id="label" layoutX="129.0" layoutY="105.0" minHeight="16.0" minWidth="69.0" text="Name">
+      <textFill>
+        <Color blue="0.576" green="0.000" red="0.800" fx:id="x1" />
+      </textFill>
+    </Label>
+    <PasswordField fx:id="password" layoutX="308.0" layoutY="159.0" opacity="0.55" prefWidth="191.0" promptText="password" />
+    <TextField id="id" fx:id="name" layoutX="308.0" layoutY="105.0" opacity="0.62" prefWidth="191.0" promptText="Name" />
+    <Label id="label" layoutX="129.0" layoutY="159.0" minHeight="16.0" minWidth="69.0" text="Password" textFill="$x1" />
+    <Separator layoutX="58.0" layoutY="330.0" prefHeight="16.0" prefWidth="490.0">
+      <effect>
+        <ColorAdjust saturation="1.0">
+          <input>
+            <Glow level="1.0" />
+          </input>
+        </ColorAdjust>
+      </effect>
+    </Separator>
+    <Label layoutX="56.0" layoutY="36.0" opacity="0.86" text="Create New Account" textFill="#ff6433">
+      <font>
+        <Font name="Arial Bold" size="50.0" />
+      </font>
+    </Label>
+    <Label layoutX="73.0" layoutY="306.0" opacity="0.42" text="*To Create account enter user name and password" />
+    <Button fx:id="close" blendMode="EXCLUSION" layoutX="534.0" layoutY="0.0" minHeight="36.0" mnemonicParsing="false" onAction="#closeing" prefHeight="36.0" prefWidth="69.0" text="Close" textFill="RED">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
+    <PasswordField id="password" fx:id="passwordagain" layoutX="308.0" layoutY="213.0" opacity="0.71" prefWidth="191.0" promptText="password" />
+    <Label id="label" layoutX="129.0" layoutY="213.0" minHeight="16.0" minWidth="69.0" text="Password verifvation" textFill="#cc0093" />
+    <RadioButton fx:id="doc" blendMode="DARKEN" layoutX="38.0" layoutY="277.0" mnemonicParsing="false" text="Doctor">
+      <toggleGroup>
+        <ToggleGroup fx:id="type" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="rec" blendMode="DARKEN" layoutX="173.0" layoutY="277.0" mnemonicParsing="false" opacity="1.0" text="Recitpion" toggleGroup="$type" />
+    <Button id="back" blendMode="GREEN" layoutX="331.0" layoutY="358.0" mnemonicParsing="false" onAction="#back" prefHeight="58.0" prefWidth="164.0" text="Back" textFill="RED">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Button>
+    <CheckBox fx:id="admin" blendMode="HARD_LIGHT" layoutX="433.0" layoutY="277.0" mnemonicParsing="false" text="Admin" />
+    <Line endX="100.0" endY="-1.0" layoutX="349.0" layoutY="269.0" startX="-227.0" startY="0.0" />
+  </children>
+</AnchorPane>

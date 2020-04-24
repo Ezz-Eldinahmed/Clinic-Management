@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="609.8951416015625" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.ResciptionController">
+  <children>
+    <ImageView fitHeight="609.8951390814004" fitWidth="598.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@child-doc.jpg" />
+      </image>
+    </ImageView>
+    <RadioButton id="checkahmed" fx:id="drahmed" layoutX="33.0" layoutY="61.0" mnemonicParsing="false" text="Dr/Ahmed mustafa">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+      <toggleGroup>
+        <ToggleGroup fx:id="drs" />
+      </toggleGroup>
+    </RadioButton>
+    <TextField id="namepatien" fx:id="name" layoutX="33.0" layoutY="202.0" prefWidth="200.0" promptText="Name" />
+    <RadioButton id="checkazza" fx:id="drazza" font="$x1" layoutX="368.0" layoutY="61.0" mnemonicParsing="false" text="Dr/Azza Ezz-Eldin" toggleGroup="$drs" />
+    <Label layoutX="33.0" layoutY="166.0" text="Name" />
+    <Label layoutX="33.0" layoutY="258.0" prefWidth="37.999908447265625" text="Age" />
+    <TextField fx:id="age" layoutX="33.0" layoutY="295.0" prefWidth="200.0" promptText="age" />
+    <Button id="register" fx:id="registery" blendMode="EXCLUSION" layoutX="291.0" layoutY="485.0" mnemonicParsing="false" onAction="#registerPatient" opacity="1.0" prefHeight="55.0" prefWidth="213.0" text="Insert" textFill="RED">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Button>
+    <RadioButton fx:id="consult" font="$x1" layoutX="33.0" layoutY="116.0" mnemonicParsing="false" text="consult">
+      <toggleGroup>
+        <ToggleGroup fx:id="kind" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="reveal" font="$x1" layoutX="368.0" layoutY="116.0" mnemonicParsing="false" text="reveal" toggleGroup="$kind" />
+    <TextField fx:id="phone" layoutX="33.0" layoutY="390.0" prefWidth="200.0" promptText="phone" />
+    <Label id="phone" layoutX="33.0" layoutY="355.0" prefWidth="73.0" text="phone" />
+    <Label layoutX="33.0" layoutY="440.0" text="Weight" />
+    <TextField id="weigth" fx:id="weight" layoutX="33.0" layoutY="479.0" prefWidth="200.0" promptText="Weight" />
+    <TextField id="rosheta" fx:id="r" alignment="TOP_LEFT" layoutX="368.0" layoutY="254.0" opacity="0.0" prefHeight="32.0" prefWidth="132.40313720703125" promptText="R" />
+    <Button fx:id="back" blendMode="GREEN" layoutX="532.0" layoutY="0.0" mnemonicParsing="false" onAction="#back" text="back">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

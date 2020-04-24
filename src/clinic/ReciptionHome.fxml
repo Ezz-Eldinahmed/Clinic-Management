@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="579.0" prefHeight="437.0" prefWidth="579.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.ReciptionHomeController">
+  <children>
+    <ImageView fitHeight="434.25" fitWidth="579.0" layoutX="0.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="view" blendMode="MULTIPLY" layoutX="59.0" layoutY="176.0" mnemonicParsing="false" onAction="#tableOfRecitptionView" prefHeight="42.0" prefWidth="183.0" text="View Patient" textAlignment="CENTER">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x2" />
+      </font>
+      <textFill>
+        <Color blue="0.096" green="0.000" red="0.200" fx:id="x1" />
+      </textFill>
+    </Button>
+    <Button id="add" fx:id="ADD" blendMode="MULTIPLY" font="$x2" layoutX="59.0" layoutY="232.0" mnemonicParsing="false" onAction="#TableRecitptionADD" prefHeight="42.0" prefWidth="183.0" text="Add patient" textFill="$x1" />
+    <Label layoutX="151.0" layoutY="62.0" prefWidth="443.0" text="Welcome Recitiponst" textFill="#319900">
+      <font>
+        <Font name="System Bold" size="40.0" />
+      </font>
+    </Label>
+    <Button fx:id="remove" blendMode="MULTIPLY" font="$x2" layoutX="59.0" layoutY="361.0" mnemonicParsing="false" onAction="#RemoveRecitptiontable" prefHeight="42.0" prefWidth="183.0" text="Remove Patient" textFill="$x1" />
+    <Button fx:id="edit" blendMode="MULTIPLY" font="$x2" layoutX="59.0" layoutY="298.0" mnemonicParsing="false" onAction="#TableRecitptionEdit" prefHeight="41.999900000002526" prefWidth="183.0" text="Edit patient" textFill="$x1" />
+    <Button font="$x2" layoutX="471.0" layoutY="381.0" mnemonicParsing="false" onAction="#logout" text="Logout" textFill="RED" />
+    <Button fx:id="manage" blendMode="EXCLUSION" layoutX="314.0" layoutY="253.0" mnemonicParsing="false" onAction="#manageing" prefHeight="46.0" prefWidth="207.0" text="Manage" textFill="#990000">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

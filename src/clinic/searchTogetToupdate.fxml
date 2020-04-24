@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="301.0" prefHeight="330.0" prefWidth="458.6666564941406" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.SearchTogetToupdateController">
+  <children>
+    <ImageView fitHeight="344.00000017004595" fitWidth="458.6666564941406" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="24.0" layoutY="116.0" prefWidth="256.0" text="Search To update" textFill="#1400ff">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <TextField id="text" fx:id="textgetid" layoutX="118.0" layoutY="165.0" opacity="0.53" prefWidth="222.0" promptText="Enter Id" />
+    <Button fx:id="search" blendMode="DIFFERENCE" layoutX="66.0" layoutY="213.0" minHeight="30.0" mnemonicParsing="false" onAction="#searchingg" prefHeight="58.0" prefWidth="142.00009999999747" text="Search" textFill="RED">
+      <font>
+        <Font name="System Bold" size="25.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Label layoutX="33.0" layoutY="277.0" prefWidth="238.0" text="Enter id you want to Update" />
+    <Button blendMode="GREEN" font="$x1" layoutX="237.0" layoutY="212.0" mnemonicParsing="false" onAction="#backing" prefHeight="58.0" prefWidth="143.0" text="Back" />
+  </children>
+</AnchorPane>

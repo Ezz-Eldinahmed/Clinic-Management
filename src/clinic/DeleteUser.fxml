@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="333.0" minWidth="541.3333129882812" prefHeight="384.0" prefWidth="541.3333129882812" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.DeleteUserController">
+  <children>
+    <ImageView fitHeight="405.99999853905217" fitWidth="541.3333435058594" layoutX="1.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="190.0" layoutY="0.0" text="Delete User" textFill="#4100cc">
+      <font>
+        <Font name="System Bold" size="30.0" fx:id="x3" />
+      </font>
+    </Label>
+    <PasswordField fx:id="pass" layoutX="182.0" layoutY="195.0" opacity="0.73" prefWidth="200.0" promptText="password" />
+    <TextField fx:id="user" layoutX="182.0" layoutY="149.0" opacity="0.65" prefWidth="200.0" promptText="User name" />
+    <Label layoutX="32.0" layoutY="149.0" text="User name">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label layoutX="32.0" layoutY="195.0" text="Password">
+      <font>
+        <Font name="System Bold" size="18.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Button id="delete" fx:id="Back" blendMode="GREEN" font="$x3" layoutX="282.0" layoutY="306.0" mnemonicParsing="false" onAction="#Backing" prefHeight="54.0" prefWidth="177.9998779296875" text="Back" textFill="RED" />
+    <PasswordField id="password" fx:id="pa" layoutX="237.0" layoutY="257.0" opacity="0.78" prefWidth="193.0" promptText="password Again" />
+    <Label id="label" font="$x2" layoutX="32.0" layoutY="254.0" minHeight="16.0" minWidth="69.0" prefHeight="35.0" text="Password verifvation" textFill="BLACK" />
+    <Label layoutX="31.0" layoutY="234.0" opacity="0.52" text="This Field to varify Password">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x4" />
+      </font>
+    </Label>
+    <Button fx:id="close" blendMode="EXCLUSION" font="$x4" layoutX="480.0" layoutY="0.0" mnemonicParsing="false" onAction="#closing" text="close" textFill="RED" />
+    <Button fx:id="delete" blendMode="MULTIPLY" font="$x3" layoutX="66.0" layoutY="306.0" mnemonicParsing="false" onAction="#deleting" prefHeight="54.0" prefWidth="178.0" text="Delete" />
+  </children>
+</AnchorPane>

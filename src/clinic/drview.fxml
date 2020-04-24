@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="617.034423828125" minWidth="611.0" prefHeight="617.034423828125" prefWidth="611.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.DrviewController">
+  <children>
+    <ImageView fitHeight="617.0344557352772" fitWidth="605.0000610351562" layoutX="9.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@child-doc.jpg" />
+      </image>
+    </ImageView>
+    <TextField id="namepatien" fx:id="name" layoutX="22.0" layoutY="182.0" prefWidth="200.0" promptText="Name" />
+    <Label layoutX="23.0" layoutY="224.0" text="Age" />
+    <TextField fx:id="age" layoutX="22.0" layoutY="264.0" prefWidth="200.0" promptText="age" />
+    <Label layoutX="26.0" layoutY="306.0" text="Weight" />
+    <TextField id="weigth" fx:id="weight" layoutX="26.0" layoutY="348.0" prefWidth="200.0" promptText="Weight" />
+    <TextField id="rosheta" fx:id="r" alignment="TOP_LEFT" layoutX="248.0" layoutY="106.0" opacity="0.42" prefHeight="393.0" prefWidth="350.0" promptText="R" />
+    <Button id="Doneregist" fx:id="Done" blendMode="MULTIPLY" layoutX="280.0" layoutY="518.0" mnemonicParsing="false" onAction="#completeregster" opacity="1.0" prefHeight="56.0" prefWidth="200.0" text="Insert" textFill="RED">
+      <font>
+        <Font name="System Bold" size="30.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Label layoutX="25.0" layoutY="153.0" text="Name" />
+    <RadioButton fx:id="consult" layoutX="25.0" layoutY="106.0" mnemonicParsing="false" text="consult">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+      <toggleGroup>
+        <ToggleGroup fx:id="kind" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="reveal" font="$x1" layoutX="155.0" layoutY="106.0" mnemonicParsing="false" text="reveal" toggleGroup="$kind" />
+    <Button fx:id="back" blendMode="GREEN" layoutX="541.0" layoutY="0.0" mnemonicParsing="false" onAction="#back" text="Back">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+    <TextField fx:id="phone" layoutX="28.0" layoutY="438.0" prefWidth="200.0" promptText="phone" />
+    <Label id="phone" layoutX="28.0" layoutY="395.0" prefWidth="73.0" text="phone" />
+    <RadioButton id="checkahmed" fx:id="drahmed" font="$x1" layoutX="28.0" layoutY="36.0" mnemonicParsing="false" text="Dr/Ahmed mustafa">
+      <textFill>
+        <Color blue="0.096" green="0.000" red="0.200" fx:id="x2" />
+      </textFill>
+      <toggleGroup>
+        <ToggleGroup fx:id="drs" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton id="checkazza" fx:id="drazza" layoutX="256.0" layoutY="32.0" mnemonicParsing="false" text="Dr/Azza Ezz-Eldin" textFill="$x2" toggleGroup="$drs">
+      <font>
+        <Font name="System Bold" size="22.0" />
+      </font>
+    </RadioButton>
+    <Line endX="20.0" endY="70.0" layoutX="7.0" layoutY="16.0" startX="240.0" startY="69.0" />
+    <Label font="$x3" layoutX="256.0" layoutY="67.0" prefWidth="48.0" text="R" />
+  </children>
+</AnchorPane>

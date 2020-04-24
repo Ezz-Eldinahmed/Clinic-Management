@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="loading" blendMode="SRC_OVER" cache="true" cacheHint="DEFAULT" focusTraversable="false" minHeight="258.0" minWidth="343.0" prefHeight="435.5" prefWidth="595.3333740234375" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.FXMLDocumentController">
+  <children>
+    <ImageView fitHeight="452.5000305175781" fitWidth="603.3333740234375" layoutX="-4.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button id="button" fx:id="login" blendMode="COLOR_BURN" contentDisplay="TOP" layoutX="109.0" layoutY="347.0" onAction="#loginAction" opacity="1.0" prefHeight="59.0" prefWidth="162.0" text="Login" textOverrun="CLIP" underline="false">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#f5ffcc" />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="Arial Bold" size="30.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Label fx:id="label" layoutX="133.0" layoutY="172.0" minHeight="16.0" minWidth="69.0" text="Name">
+      <textFill>
+        <Color blue="0.576" green="0.000" red="0.800" fx:id="x1" />
+      </textFill>
+    </Label>
+    <PasswordField fx:id="password" layoutX="245.0" layoutY="223.0" opacity="0.44" prefWidth="191.0" promptText="password" />
+    <TextField fx:id="id" layoutX="245.0" layoutY="172.0" opacity="0.43" prefWidth="191.0" promptText="ID" />
+    <Label id="label" layoutX="133.0" layoutY="223.0" minHeight="16.0" minWidth="69.0" text="Password" textFill="$x1" />
+    <Separator layoutX="56.0" layoutY="307.0" prefHeight="16.0" prefWidth="490.0">
+      <effect>
+        <ColorAdjust saturation="1.0">
+          <input>
+            <Glow level="1.0" />
+          </input>
+        </ColorAdjust>
+      </effect>
+    </Separator>
+    <Label layoutX="39.0" layoutY="66.0" opacity="0.86" text="Welcome" textFill="#ff6433">
+      <font>
+        <Font name="Arial Bold" size="60.0" />
+      </font>
+    </Label>
+    <Label layoutX="56.0" layoutY="274.0" opacity="0.42" text="*To Login enter user name and password" />
+    <Button fx:id="close" blendMode="DIFFERENCE" layoutX="341.0" layoutY="347.0" minHeight="48.0" mnemonicParsing="false" onAction="#closeing" prefHeight="59.0" prefWidth="162.0" text="Close" textFill="RED">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

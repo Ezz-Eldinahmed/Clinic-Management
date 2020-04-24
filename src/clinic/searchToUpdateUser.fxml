@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="355.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.SearchToUpdateUserController">
+  <children>
+    <ImageView fitHeight="319.5" fitWidth="426.0" layoutX="0.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button blendMode="DIFFERENCE" layoutX="45.0" layoutY="201.0" mnemonicParsing="false" onAction="#search" prefWidth="151.0" text="Search" textFill="RED">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Button>
+    <TextField fx:id="un" layoutX="72.0" layoutY="134.0" opacity="0.49" prefHeight="53.0" prefWidth="282.0" promptText="Enter User name" />
+    <Label layoutX="21.0" layoutY="264.0" prefWidth="238.0" text="Enter id you want to Update" />
+    <Label layoutX="111.0" layoutY="53.0" prefWidth="256.0" text="Search To update" textFill="#1400ff">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button blendMode="GREEN" layoutX="224.0" layoutY="201.0" mnemonicParsing="false" onAction="#Back" prefHeight="44.0" prefWidth="151.0" text="Back">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

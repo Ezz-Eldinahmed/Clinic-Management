@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="972.9998779296875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.ExistpatientController">
+  <children>
+    <TableView fx:id="viewexistens" layoutX="0.0" layoutY="0.0" prefHeight="439.0" prefWidth="973.0">
+      <columns>
+        <TableColumn prefWidth="37.33334481716156" text="id" fx:id="identifer" />
+        <TableColumn prefWidth="113.33334732055664" text="name" fx:id="nameOf" />
+        <TableColumn prefWidth="75.0" text="kind" fx:id="kindo" />
+        <TableColumn prefWidth="125.33329772949219" text="date" fx:id="dateo" />
+        <TableColumn prefWidth="58.66668701171875" text="weight" fx:id="weight" />
+        <TableColumn prefWidth="119.33334350585938" text="dr" fx:id="dr0" />
+        <TableColumn prefWidth="52.6666259765625" text="age" fx:id="age0" />
+        <TableColumn prefWidth="95.33331298828125" text="phone" fx:id="phone0" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="291.99995930989587" text="r" fx:id="r0" />
+      </columns>
+    </TableView>
+    <Button fx:id="close" blendMode="EXCLUSION" layoutX="0.0" layoutY="439.0" mnemonicParsing="false" onAction="#closeing" text="close" textFill="RED">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" blendMode="SRC_ATOP" minHeight="258.5" minWidth="399.33331298828125" prefHeight="333.5" prefWidth="480.33331298828125" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.SearchPatientController">
+  <children>
+    <ImageView fitHeight="359.75" fitWidth="479.66664739311176" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="36.0" layoutY="121.0" prefWidth="374.0" text="Search patient To Delete" textAlignment="CENTER" textFill="#4100cc" textOverrun="CLIP">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Label>
+    <Button fx:id="search" blendMode="MULTIPLY" layoutX="59.0" layoutY="228.0" minHeight="40.0" mnemonicParsing="false" onAction="#searchingFordelete" opacity="1.0" prefHeight="52.0001220703125" prefWidth="157.0" text="search" textFill="RED">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Button>
+    <TextField id="phoneno" fx:id="id" layoutX="97.0" layoutY="175.0" opacity="0.38" prefWidth="287.0" promptText="ente patient id" />
+    <Label layoutX="14.0" layoutY="288.0" prefWidth="238.0" text="Enter id you want to delete" />
+    <Button blendMode="GREEN" layoutX="252.0" layoutY="228.0" mnemonicParsing="false" onAction="#Backing" prefHeight="53.0" prefWidth="157.0" text="Back">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+    <Button fx:id="close" blendMode="DIFFERENCE" layoutX="406.0" layoutY="0.0" mnemonicParsing="false" onAction="#Closing" prefHeight="30.000099999997474" prefWidth="74.0" text="Close" textFill="RED">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

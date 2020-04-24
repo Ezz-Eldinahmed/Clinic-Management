@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="998.0" prefHeight="675.0000999999975" prefWidth="998.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.TablePatientReciptionController">
+  <children>
+    <Label layoutX="14.0" layoutY="2.0" text="Reciptionist Table" textFill="RED">
+      <font>
+        <Font size="25.0" />
+      </font>
+    </Label>
+    <Button fx:id="back" blendMode="GREEN" layoutX="919.0" layoutY="1.0" mnemonicParsing="false" onAction="#back" text="Back">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Button>
+    <ScrollPane layoutX="0.0" layoutY="36.0" prefHeight="640.0" prefWidth="997.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+      </content>
+    </ScrollPane>
+    <TableView id="DataTable" fx:id="rectav" layoutX="1.0" layoutY="36.0" prefHeight="639.0001220703125" prefWidth="997.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="31.0" text="Id" fx:id="id" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Name" fx:id="name" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="117.0" text=" Kind Of Visit" fx:id="kind" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="118.0" text="Date" fx:id="date" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="68.0" text="Weight" fx:id="weight" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" text="Dr" fx:id="dr" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="Age" fx:id="age" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Phone" fx:id="phone" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="282.0" text="R" fx:id="r" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

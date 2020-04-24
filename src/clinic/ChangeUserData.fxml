@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="516.0" prefHeight="426.5000305175781" prefWidth="568.666748046875" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.ChangeUserDataController">
+  <children>
+    <ImageView fitHeight="426.5000305175781" fitWidth="568.6667073567708" layoutX="-2.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button id="button" fx:id="update" blendMode="COLOR_BURN" contentDisplay="TOP" layoutX="77.0" layoutY="330.0" onAction="#updateing" opacity="1.0" prefHeight="60.0" prefWidth="162.0" text="Update" textOverrun="CLIP" underline="false">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="#f5ffcc" />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="Arial Bold" size="30.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Label id="label" layoutX="97.0" layoutY="89.0" minHeight="16.0" minWidth="69.0" text="Name">
+      <textFill>
+        <Color blue="0.576" green="0.000" red="0.800" fx:id="x1" />
+      </textFill>
+    </Label>
+    <PasswordField id="password" fx:id="p" layoutX="276.0" layoutY="143.0" opacity="0.44" prefWidth="191.0" promptText="password" />
+    <TextField id="id" fx:id="na" layoutX="276.0" layoutY="89.0" opacity="0.43" prefWidth="191.0" promptText="Name" text="" />
+    <Label id="label" layoutX="97.0" layoutY="143.0" minHeight="16.0" minWidth="69.0" text="Password" textFill="$x1" />
+    <Separator layoutX="20.0" layoutY="304.0" prefHeight="16.0" prefWidth="490.0">
+      <effect>
+        <ColorAdjust saturation="1.0">
+          <input>
+            <Glow level="1.0" />
+          </input>
+        </ColorAdjust>
+      </effect>
+    </Separator>
+    <Label font="$x3" layoutX="147.0" layoutY="8.0" opacity="0.86" text="Change User Data" textFill="#ff6433" />
+    <Button fx:id="close" blendMode="DIFFERENCE" layoutX="492.0" layoutY="0.0" minHeight="35.0" mnemonicParsing="false" onAction="#closeing" prefHeight="35.0" prefWidth="75.0" text="Close" textFill="RED">
+      <font>
+        <Font name="System Bold" size="15.0" fx:id="x2" />
+      </font>
+    </Button>
+    <PasswordField id="password" fx:id="pa" layoutX="276.0" layoutY="215.0" opacity="0.44" prefWidth="191.0" promptText="password" />
+    <Label id="label" layoutX="94.0" layoutY="215.0" minHeight="16.0" minWidth="69.0" prefHeight="35.0" text="Password verifvation" textFill="#cc0093" />
+    <RadioButton id="doc" fx:id="docto" blendMode="DARKEN" layoutX="97.0" layoutY="263.0" mnemonicParsing="false" text="Doctor">
+      <toggleGroup>
+        <ToggleGroup fx:id="type" />
+      </toggleGroup>
+    </RadioButton>
+    <RadioButton id="rec" fx:id="re" blendMode="DARKEN" layoutX="276.0" layoutY="263.0" mnemonicParsing="false" opacity="1.0" text="Recitpion" toggleGroup="$type" />
+    <Button fx:id="back" blendMode="GREEN" layoutX="304.0" layoutY="332.0" mnemonicParsing="false" onAction="#backing" prefHeight="60.0" prefWidth="162.00009999999747" text="Back" textFill="RED">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+    </Button>
+    <Label font="$x2" layoutX="97.0" layoutY="189.0" opacity="0.52" text="This Field to varify Password" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="384.0" prefHeight="384.0" prefWidth="512.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clinic.HomeDrController">
+  <children>
+    <ImageView fitHeight="384.0" fitWidth="512.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@background.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="view" blendMode="EXCLUSION" layoutX="42.0" layoutY="126.0" mnemonicParsing="false" onAction="#tableOfDoctorView" prefHeight="42.0" prefWidth="199.0" text="View Patient" textFill="RED">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button fx:id="add" blendMode="EXCLUSION" font="$x1" layoutX="42.0" layoutY="189.0" mnemonicParsing="false" onAction="#Addpatient" prefHeight="42.0" prefWidth="199.0" text="Add patient" textFill="RED" />
+    <Button fx:id="remove" blendMode="EXCLUSION" font="$x1" layoutX="42.0" layoutY="316.0" mnemonicParsing="false" onAction="#RemoveDrtable" prefHeight="42.0" prefWidth="199.0" text="Remove Patient" textFill="RED" />
+    <Button fx:id="edit" blendMode="EXCLUSION" font="$x1" layoutX="42.0" layoutY="253.0" mnemonicParsing="false" onAction="#TableDREdit" prefHeight="42.0" prefWidth="199.0" text="Edit patient" textFill="RED" />
+    <Label layoutX="174.0" layoutY="31.0" text="Welcome Doctor" textFill="#319900">
+      <font>
+        <Font name="System Bold" size="40.0" />
+      </font>
+    </Label>
+    <Button layoutX="372.0" layoutY="322.0" mnemonicParsing="false" onAction="#logout" text="Logout" textFill="RED">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Button>
+    <Button fx:id="manage" blendMode="MULTIPLY" layoutX="271.0" layoutY="202.0" mnemonicParsing="false" onAction="#Manageing" prefHeight="59.0" prefWidth="227.0" text="Manage Users" textFill="BLACK">
+      <font>
+        <Font name="System Bold" size="25.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
