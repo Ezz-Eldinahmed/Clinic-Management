@@ -1,6 +1,6 @@
 # Clinic-Management
 clinc mangment system for a clinic have two doctors patient are required to login and if loged in before show history also have many user could login may be admins that could edit users or ordinary one how have only access to register paitents have two places one for doctor other for receptionist made by java,javaFx and h2 database still beginner version
-#1
+<br>#1
 <div align="center">
 
 <img src="https://user-images.githubusercontent.com/49767083/88866449-07780200-d20b-11ea-9f1d-2f26771a17e6.gif" alt= "image">
